@@ -67,3 +67,12 @@ if(elem !== null){
     console.log(elem.textContent);
 }
 console.log(elem?.textContent);
+
+function szamol(){
+    let szam = parseInt((document.getElementById('szam') as HTMLInputElement).value);
+    (document.getElementById('kiment') as HTMLElement).textContent = negyzet(szam).toString();
+}
+
+function init(){
+    document.getElementById('szam')?.addEventListener('input' , szamol );
+}

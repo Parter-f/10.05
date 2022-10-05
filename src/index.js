@@ -59,3 +59,11 @@ if (elem !== null) {
     console.log(elem.textContent);
 }
 console.log(elem === null || elem === void 0 ? void 0 : elem.textContent);
+function szamol() {
+    let szam = parseInt(document.getElementById('szam').value);
+    document.getElementById('kiment').textContent = negyzet(szam).toString();
+}
+function init() {
+    var _a;
+    (_a = document.getElementById('szam')) === null || _a === void 0 ? void 0 : _a.addEventListener('input', szamol);
+}

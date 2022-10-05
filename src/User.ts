@@ -12,3 +12,4 @@ export class User{
         console.log(this.#eletkor , this.#nev);
     }
 }
+
